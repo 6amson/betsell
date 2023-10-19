@@ -1,5 +1,9 @@
 .marketSection{
-    // background: grey;
+    background: rgb(241, 240, 240);
+    width: 100vw;
+    height: 100vh;
+    // overflow-y: scroll;
+    // background: red;
 }
 
 .marketPlaceItem{
@@ -14,12 +18,7 @@
     div{
         // background-color: blue;
         margin-right: 0.3rem;
-        padding: 0.3rem 0 0.3rem 0;
-
-        ul{
-            list-style: none;
-            // background-color: red;
-        }
+        padding: 0.3rem 0.3rem 0.3rem 0;
     }
 
     button{
@@ -27,20 +26,37 @@
         background: none;
         right: 0;
         position: relative;
+        margin-top: 3px;
+        padding-right: 0.5rem;
     }
+}
+
+.listMarket{
+    // background-color: red;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.listChildMarket{
+    list-style: none;
+    margin: 0.3rem 0;
+    cursor: pointer;
+
 }
 
 
 .sidebarContainer{
     position: fixed;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     left: 0;
     background-color: white;
     padding: 1rem 0 ;
     // border-top: solid 1px rgb(216, 216, 216);
     // border-right: solid 1px rgb(216, 216, 216);
-    // border-bottom: solid 1px rgb(216, 216, 216);
+    border: solid 1px rgb(216, 216, 216);
 
+    // background-color: red;
 
 }
 

@@ -20,27 +20,21 @@ export default function sidebarMarketplaceItem(props: sidebarProps) {
         display: 'none',
     };
 
-    if (props.isOpen) {
-        toggledisplay.display = 'block';
+    const rotatedisplay = {
+        transform: 'rotate(0deg)'
     }
 
-    const handleClick = () => {
-        props.isOpen === true;
-
-        if(props.isOpen == false){
-            !props.isOpen
-            console.log('true')
-        }
-        
-
+    if (props.isOpen) {
+        toggledisplay.display = 'block';
+        rotatedisplay.transform = "rotate(45)deg"
     }
 
     return (
         <div className="marketPlaceItem">
             <div key={props.index}>
-                <ul>{props.sport}</ul>
+                <ul className="listMarket">{props.sport}</ul>
                 <div style={toggledisplay}>
-                    {props.options.map((item, index) => <li>{item}</li>)}
+                    {props.options.map((item, index) => <li className="listChildMarket">{item}</li>)}
 
                 </div>
             </div>
@@ -52,13 +46,12 @@ export default function sidebarMarketplaceItem(props: sidebarProps) {
 
                 }}
                 className="sidebarButton"
+                style={rotatedisplay}
             >
                 <Image
                     src={expandArrow.src}
                     width={15}
                     height={15}
-                    className={`${props.isOpen ? "rotate-180" : "rotate-0"
-                        }`}
                     alt="question arrow "
                 ></Image>
             </button>
