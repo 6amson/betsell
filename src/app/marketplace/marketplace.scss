@@ -1,0 +1,53 @@
+.marketSection{
+    // background: grey;
+}
+
+.marketPlaceItem{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 1rem;
+   
+
+    
+    div{
+        // background-color: blue;
+        margin-right: 0.3rem;
+        padding: 0.3rem 0 0.3rem 0;
+
+        ul{
+            list-style: none;
+            // background-color: red;
+        }
+    }
+
+    button{
+        border: 0;
+        background: none;
+        right: 0;
+        position: relative;
+    }
+}
+
+
+.sidebarContainer{
+    position: fixed;
+    margin-top: 4rem;
+    left: 0;
+    background-color: white;
+    padding: 1rem 0 ;
+    // border-top: solid 1px rgb(216, 216, 216);
+    // border-right: solid 1px rgb(216, 216, 216);
+    // border-bottom: solid 1px rgb(216, 216, 216);
+
+
+}
+
+.marketContainer{
+    p{
+        color: grey;
+        font-size: 0.8rem;
+        padding-left: 2rem;
+    }
+}
