@@ -21,19 +21,26 @@
   .headerContainer{
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0 2rem 0 2rem;
+    //   justify-content: space-between;
+      padding: 0 1rem 0 1rem;
 
+  }
+
+  .logoDiv{
+    //   background-color: red;
+      width: 12rem;
+    border-right: solid 1.5px rgb(216, 216, 216);
   }
 
   .searchDiv{
     display: flex;
     align-items: center;
     position: relative;
+    margin-left: 2rem;
 
     .searchIcon{
         position: absolute;
-        left: 9.5rem;
+        left: 10.5rem;
     }
 
     p{
@@ -42,19 +49,23 @@
 
     input{
         height: 2rem;
-        width: 20rem;
-        padding: 0.5rem;
+        width: 50rem;
+        padding: 1.2rem;
         padding-left: 1.5rem;
         border-radius: 5px;
         outline: none;
         border: 0px solid;
-        margin-left: 3rem;
+        margin-left: 4rem;
         background-color: #f7f7f7;
     }
 }
 
 .meta{
     display: flex;
+    margin-left: 3rem;
+    // background-color: red;
+    height: 3rem;
+    align-items: center;
 
 
     div{
@@ -67,7 +78,7 @@
     .connectMetamask{
     background-color: rgb(0, 0, 0);
     margin-right: 1rem;
-    padding: 0.5rem 0.4rem;
+    padding: 1.2rem 0.4rem;
 
 
         p{
@@ -87,7 +98,7 @@
 
     .userMask{
     background-color: white;
-    padding: 0.5rem;
-        border:solid 1px black;
+    padding: 1.1rem 0.5rem;
+    border: solid 1px black;
     }
 }

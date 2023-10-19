@@ -12,11 +12,11 @@ import { useState, useEffect } from "react";
 
 
 export default function Header() {
-    const [isMetamaskConnected, setIsMetaMaskConnected] = useState(true);
+    const [isMetamaskConnected, setIsMetaMaskConnected] = useState(false);
 
     return (
         <div className="headerContainer">
-            <div>
+            <div className="logoDiv">
                 <Image
                     src={logo}
                     width={100}
